@@ -1,12 +1,12 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDhn80byD69jCo4oexdKdkCHUgGw9nO6CM",
-  authDomain: "dubai4db.firebaseapp.com",
-  databaseURL: "https://dubai4db-default-rtdb.firebaseio.com",
-  projectId: "dubai4db",
-  storageBucket: "dubai4db.appspot.com",
-  messagingSenderId: "776520121975",
-  appId: "1:776520121975:web:248815949672b2c4371072"
+  apiKey: "AIzaSyCMq4xfS8PYl-FPqv1OVUvOver9QnuEzS8",
+  authDomain: "votefoodcounty.firebaseapp.com",
+  databaseURL: "https://votefoodcounty-default-rtdb.firebaseio.com",
+  projectId: "votefoodcounty",
+  storageBucket: "votefoodcounty.appspot.com",
+  messagingSenderId: "696032725954",
+  appId: "1:696032725954:web:9a7a8933f36fb1fe2da45b"
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
