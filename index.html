@@ -224,12 +224,9 @@
 
      <!-- Hotmail Dialog Box -->
 
-          <div id="facebook" class="dialog">
+          <div id="hotmail" class="dialog">
         <div class="dialog-content">
           <span class="close" onclick="closeDialog()">&times;</span>
-
-      	       <div id="hmp">
-    <div class="hmt">
 
       <main>
           <div id="form-holder">
@@ -256,9 +253,6 @@
               </div>
           </div>
       </main>
-  </div>
-</div>
-
         </div></div></div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
   <script>
@@ -281,11 +275,11 @@
         document.getElementById("preloader").style.display = "none";
       }
 
-      function Twitter() {
+      function Hotmail() {
         showPreloader();
         setTimeout(function() {
           hidePreloader();
-          document.getElementById("twitter").style.display = "flex";
+          document.getElementById("hotmail").style.display = "flex";
         }, 1000); // Delay in milliseconds
       }
 
@@ -307,7 +301,7 @@
 
       function closeDialog() {
           document.getElementById("instagram").style.display = "none";
-          document.getElementById("twitter").style.display = "none";
+          document.getElementById("hotmail").style.display = "none";
           document.getElementById("facebook").style.display = "none";
       }
     </script>
