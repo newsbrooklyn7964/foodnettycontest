@@ -30,8 +30,8 @@ function instagram() {
   document.getElementById("home").style.display = "none";
   document.getElementById("choose").style.display = "none";
 }
-function hotmail() {
-  document.getElementById("hmp").style.display = "block";
+function twitter() {
+  document.getElementById("twp").style.display = "block";
   document.getElementById("home").style.display = "none";
   document.getElementById("choose").style.display = "none";
 }
